@@ -429,6 +429,9 @@ header > .menu .menu-item a:target {
   font-size: 1.4em;
   text-decoration: none;
 }
+#section-billetterie a {
+  color: white;
+}
 
 
 @media (max-width: 899px) {
@@ -507,6 +510,10 @@ header > .menu .menu-item a:target {
 }
 #section-faq .item .description {
   font-size: 0.9em;
+}
+#section-faq a {
+  color: rgb(27,0,135);
+  text-decoration: none;
 }
 
 
