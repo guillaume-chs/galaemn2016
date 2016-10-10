@@ -1,0 +1,9 @@
+# Dependencies
+bower_components
+
+# Old files
+2015*
+2016*
+
+# Credentials
+Codes.txt

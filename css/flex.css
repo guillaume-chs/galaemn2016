@@ -1,0 +1,17 @@
+.flex-ctn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flex-ctn.vertical {
+	flex-direction: column;
+}
+
+
+.flex,
+.flex-0 {	flex: 0;	}
+.flex-1 {	flex: 1;	}
+.flex-2 {	flex: 2;	}
+.flex-3 {	flex: 3;	}
+.flex-5 {	flex: 5;	}
+.flex-9 {	flex: 9;	}
