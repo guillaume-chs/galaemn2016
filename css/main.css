@@ -128,7 +128,11 @@ header > .menu .menu-item a:target {
  *
  ***************************************************************/
 #section-date {
-  height: 300px!important;
+  background: rgba(0,0,0,.9);
+  height: 350px!important;
+}
+#section-date .page-content {
+  height: 300px;
 }
 #section-date .date-container {
   position: absolute;
@@ -218,9 +222,6 @@ header > .menu .menu-item a:target {
  * ARTISTES Gala
  *
  ***************************************************************/
-#section-artistes {
-  min-height: 75%;
-}
 #section-artistes .overlay {
   position: absolute;
   z-index: -10;
@@ -237,34 +238,37 @@ header > .menu .menu-item a:target {
 #section-artistes .artiste {
   color: white;
   font-family: 'FuturaRegular', sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 1.2vw;
 }
+
+
 @media (max-width: 899px) {
+  #section-artistes {
+    min-height: 100vh;
+  }
   #section-artistes .artiste {
-    font-size: 350%;
-    letter-spacing: 4%;
-    width: 100%;
     display: inline-block;
+    margin: 1rem auto;
+    width: 100%;
     text-align: center;
+    font-size: 14vw;
   }
   #section-artistes .artiste-separator { display: none; }
 }
+
+
 @media (min-width: 900px) {
+  #section-artistes {
+    min-height: 75vh;
+  }
+  #section-artistes .flex + .flex { margin-top: 2rem; }
   #section-artistes .artiste {
-    font-size: 500%;
-    letter-spacing: 7%;
-  }
-  #section-artistes .flex + .flex {
-    margin: 0 2rem;
-  }
-  #section-artistes .naxxos {
-    letter-spacing: 20px;
+    font-size: 600%;
     padding-left: 15px;
   }
-  #section-artistes .nyx {
-    letter-spacing: 30px;
-    padding-left: 15px;
-  }
+  #section-artistes .naxxos { letter-spacing: 1vw; }
   #section-artistes .artiste-separator {
     display: inline-block;
     width: 32px;
@@ -272,6 +276,32 @@ header > .menu .menu-item a:target {
     margin: 0 2rem;
     border-radius: 50%; 
     vertical-align: 75%;
+  }
+}
+
+
+.logo-willsman {
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+@media (max-width: 899px) {
+  .logo-willsman {
+    background-image: url('../img/chris_willsman_vertical.png');
+    max-width: 600px;
+    max-height: 225px;
+    width: 90vw;
+    height: 35vh;
+  }
+}
+@media (min-width: 900px) {
+  .logo-willsman {
+    background-image: url('../img/chris_willsman_horizontal.png');
+    max-width: 1200px;
+    max-height: 500px;
+    width: 75vw;
+    height: 25vh;
   }
 }
 
@@ -285,7 +315,7 @@ header > .menu .menu-item a:target {
  *
  ***************************************************************/
 #section-animations {
-  min-height: 80%;
+  min-height: 80vh;
   background: #000;
 }
 #section-animations .page-content {
