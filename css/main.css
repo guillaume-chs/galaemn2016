@@ -11,6 +11,10 @@
 body {
   z-index: 0;
 }
+.fullpage-container {
+  height: 50%;
+  padding-top: 38px;
+}
 
 
 
@@ -519,4 +523,10 @@ header > .menu .menu-item a:target {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+.fullpage-container {
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
 }
