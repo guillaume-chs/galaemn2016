@@ -129,7 +129,8 @@ header > .menu .menu-item a:target {
  ***************************************************************/
 #section-date {
   background: rgba(0,0,0,.9);
-  height: 350px!important;
+  height: 360px!important;
+  padding-bottom: 30px;
 }
 #section-date .page-content {
   height: 300px;
