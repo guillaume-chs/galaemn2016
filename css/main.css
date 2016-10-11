@@ -246,7 +246,7 @@ header > .menu .menu-item a:target {
 
 @media (max-width: 899px) {
   #section-artistes {
-    min-height: 100vh;
+    height: 100vh !important;
   }
   #section-artistes .artiste {
     display: inline-block;
@@ -261,7 +261,7 @@ header > .menu .menu-item a:target {
 
 @media (min-width: 900px) {
   #section-artistes {
-    min-height: 75vh;
+    height: 75vh !important;
   }
   #section-artistes .flex + .flex { margin-top: 2rem; }
   #section-artistes .artiste {
@@ -314,15 +314,20 @@ header > .menu .menu-item a:target {
  * ANIMATIONS Gala
  *
  ***************************************************************/
+@media (max-width: 899px) {
+  #section-animations { height: 100vh !important; }
+}
+@media (min-width: 900px) {
+  #section-animations { height: 80vh !important; }
+}
 #section-animations {
-  min-height: 80vh;
   background: #000;
 }
 #section-animations .page-content {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   width: auto;
 }
 @media (max-width: 899px) {
@@ -338,7 +343,7 @@ header > .menu .menu-item a:target {
   display: inline-flex;
   height: auto;
   min-height: 20vh;
-  margin: 1%;
+  margin: 1rem;
   border: 3px solid rgb(218,18,18);
   color: white;
 
@@ -474,7 +479,7 @@ header > .menu .menu-item a:target {
  *
  ***************************************************************/
 #section-faq {
-  min-height: 80%;
+  min-height: 80% !important;
   color: white;
   font-family: 'FuturaRegular', sans-serif;
   font-weight: normal;
@@ -525,13 +530,13 @@ header > .menu .menu-item a:target {
  *
  ***************************************************************/
 #footer {
-  width: 100%;
+  width: 100vw;
   height: 100px !important;
   text-align: center;
   display: inline-flex;
 }
 #footer .copyright {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   color: white;
   font-family: 'FuturaRegular', sans-serif;
