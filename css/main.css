@@ -136,7 +136,6 @@ header > .menu .menu-item a:target {
   height: 300px;
 }
 #section-date .date-container {
-  position: absolute;
   display: flex;
 }
 #section-date .date {
