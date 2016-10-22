@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" />
   <title>Gala des Mines de Nantes - Edition 2016</title>
 
-  <!-- <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/fullpage.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/flex.css"> -->
-  <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+  <link rel="stylesheet" type="text/css" href="css/flex.css">
 
   <style type="text/css">
     body {
-      height: 200%!important;
+      width: 100%!important;
       background-color: #000;
       -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
@@ -23,249 +22,238 @@
   <header>
     <nav class="menu">
       <ul id="fpMenu">
-        <li data-menuanchor="home" class="menu-item"><a href="#home">Accueil</a></li>
-        <li data-menuanchor="artistes" class="menu-item"><a href="#artistes">Artistes</a></li>
-        <li data-menuanchor="animations" class="menu-item"><a href="#animations">Animations</a></li>
-        <li data-menuanchor="billeterie" class="menu-item"><a href="#billeterie">Billetterie</a></li>
-        <li data-menuanchor="faq" class="menu-item"><a href="#faq">Infos utiles</a></li>
+        <li class="menu-item"><a href="#home">Accueil</a></li>
+        <li class="menu-item"><a href="#artistes">Artistes</a></li>
+        <li class="menu-item"><a href="#animations">Animations</a></li>
+        <li class="menu-item"><a href="#billetterie">Billetterie</a></li>
+        <li class="menu-item"><a href="#faq">Infos utiles</a></li>
       </ul>
     </nav>
   </header>
 
 
-  <div class="fullpage-container">
-    <!-- fullpage -->
-    <div id="fullpage">
+  <div class="page-container">
 
-      <!-- Accueil -->
-      <div id="section-home" class="section" data-anchor="home">
-        <div class="page-content">
-          <div class="logo-gala"></div>
-        </div>
-        <div class="overlay"></div>
-      </div>
 
-      <!-- Date -->
-      <div id="section-date" class="section fp-auto-height" data-anchor="date">
-        <div class="page-content flex-ctn accent-gradient">
-          <div class="logo-container">
-            <div class="logo-emn"></div>
-          </div>
-          <div class="date-container flex-0">
-            <div class="date">
-              <div class="date-item day-container"><div class="day">25</div></div>
-              <div class="date-item month-container"><div class="month">novembre</div></div>
-              <div class="date-item year-container"><div class="year">2016</div></div>
-              <div class="date-item hour-container"><div class="hour">22h - 06h</div></div>
-            </div>
-          </div>
-          <div class="logo-container">
-            <div class="logo-emn"></div>
-          </div>
-        </div>
+    <!-- Accueil -->
+    <div id="home" class="section">
+      <div class="page-content">
+        <div class="logo-gala"></div>
       </div>
-      <!-- ./Date -->
-
-      <!-- Artistes -->
-      <div id="section-artistes" class="section fp-auto-height" data-anchor="artistes">
-        <div class="overlay"></div>
-        <div class="page-content flex-ctn vertical">
-          <div class="flex">
-            <div class="logo-willsman"></div>
-          </div>
-          <div class="flex">
-            <span class="artiste naxxos">NAXXOS</span>
-            <span class="artiste-separator accent-gradient"></span>
-            <span class="artiste nyx">NYX</span>
-          </div>
-        </div>
-      </div>
-      <!-- ./Artistes -->
-
-      <!-- Animations -->
-      <div id="section-animations" class="section fp-auto-height" data-anchor="animations">
-        <div class="page-content">
-          <div class="card-container artifice">
-            <div class="card">
-              <span class="card-title">Feu d'artifice</span>
-              <p class="card-description">Comme chaque année, le Gala commencera avec son feu d'artifice unique ! Il débutera à 22h et sera visible depuis le parvis de l'école.</p>
-            </div>
-          </div>
-          <div class="card-container bars-theme">
-            <div class="card">
-              <span class="card-title">5 bars à thème</span>
-              <p class="card-description">Les premières années vous attendent dans leurs bars dont ils auront imaginé et créé tout l'univers et la décoration.</p>
-            </div>
-          </div>
-          <div class="card-container bar-champagne">
-            <div class="card">
-              <span class="card-title">Bar à champagne</span>
-              <p class="card-description">C'est désormais une tradition, le Gala a son bar à Champagne. Les plus fines bulles seront au rendez-vous pour votre plus grand plaisir.</p>
-            </div>
-          </div>
-          <div class="card-container pompom">
-            <div class="card">
-              <span class="card-title">Show pompom</span>
-              <p class="card-description">Polytech, l'ESB et les Mines s'affronteront dans une battle où la victoire sera attribuée à l'applaudimètre. Venez nombreux pour élire vos préférées !</p>
-            </div>
-          </div>
-          <div class="card-container massages">
-            <div class="card">
-              <span class="card-title">Massages relaxants</span>
-              <p class="card-description">Besoin d'un moment de détente ? Les étudiants de l'Ecole de Kiné de Nantes seront là pour proposer des massages, tout au long de la soirée.</p>
-            </div>
-          </div>
-          <div class="card-container cabaret">
-            <div class="card">
-              <span class="card-title">Cabaret véto</span>
-              <p class="card-description">Après leur succès au Chantrival, le Cabaret Véto revient sur les planches du Gala. Ne manquez pas ce show sensuel &amp; rythmé !</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ./Animations -->
-
-      <!-- Billeterie -->
-      <div id="section-billetterie" class="section" data-anchor="billeterie">
-        <div class="page-content">
-          <div class="red-square"></div>
-          <h2 class="title">Billetterie</h2>
-          <div class="description flex-ctn">
-            <p class="flex-3">
-              PREVENTE : 23 €
-              <br>
-              <br>> R.U. Nantais
-              <br>> BDE Nantais
-              <br>> en ligne*
-              <br>
-              <br><sub>*Billets non échangeables, <br> non remboursables.</sub>
-            </p>
-            <p class="flex-3">
-              SUR PLACE : 27 €
-              <br>
-              <br>> le soir même
-              <br>> achat : 19h-03h
-              <br>
-              <br>
-              <br><a href="#faq">Navettes disponibles</a>
-            </p>
-            <p class="flex-3">
-              ALUMNI : 16 €  <sub>au lieu de 23 €</sub>
-              <br>
-              <br>> réservée aux membres de l'association des anciens Mines Nantes Alumni**
-              <br>
-              <br><sub>**dans la limite d'un billet <br> par membre cotisant.</sub>
-            </p>
-          </div>
-          <div class="acheter-container">
-            <a href="#billeterie" class="acheter">Acheter en ligne</a>
-          </div>
-        </div>
-      </div>
-      <!-- ./Billeterie -->
-
-      <!-- FAQS -->
-      <div id="section-faq" class="section accent-gradient fp-auto-height" data-anchor="faq">
-        <div class="page-content">
-          <div class="side left">
-            <div class="item">
-              <h4 class="title">Comment s'y rendre</h4>
-              <p class="description">
-                BUS
-                <br>> C6 : arrêt Chantrerie-Grandes Ecoles
-                <br>> 75 : arrêt Chantrerie-Grandes Ecoles
-                <br>
-                <br>VOITURE
-                <br>> Périphérique Nord direction "La Chantrerie"
-                <br>> Autoroute A11 - Sortie 24 depuis Paris et Sortie 25 depuis Saint-Nazaire
-                <br>
-                <br>CO-VOITURAGE
-                <br>> blablacar.fr
-                <br>> covoiturage.chantrerie
-              </p>
-            </div>
-            <div class="item">
-              <h4 class="title">Sécurité</h4>
-              <p class="description">
-                L'organisation se réserve le droit d'entrée.
-                <br>Entrée interdite aux moins de 18 ans.
-                <br>
-                <br>Vous devez être en possession d'une pièce d'identité officielle.
-                <br>
-                <br>Tout comportement jugé violent ou inapproprié entrainera l'exclusion définitive de la soirée.
-              </p>
-             </div>
-          </div>
-          <div class="side right">
-            <div class="item">
-              <h4 class="title">Comment rentrer</h4>
-              <p class="description">
-                SYSTEME DE NAVETTES
-                <br>> 3h / 4h / 5h
-                <br>> <b>Prix : 2€</b>
-                <br>Arrêts Centrale-Audencia et Foch-Cathédrale.
-                <br>Départ : Ecole des Mines.
-                <br>
-                <br>CO-VOITURAGE
-                <br>> blablacar.fr
-                <br>> covoiturage.chantrerie
-                <br>
-                <br>VOITURIER
-                <br>> Taxis
-                <br>> UBER
-              </p>
-            </div>
-            <div class="item">
-              <h4 class="title">Nous contacter</h4>
-              <p class="description">
-                GALA MINES NANTES 2016
-                <br>> 4 rue Alfred Kastler, 44300 Nantes, France.
-                <br>> contact@galadesmines.com
-                <br>
-                <br>RESEAUX SOCIAUX
-                <br>> <a href="//www.facebook.com/GalaDesMines2016">Facebook</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- ./FAQS -->
-
-      <!-- Copyright -->
-      <div id="footer" class="section fp-auto-height" data-anchor="copyright">
-        <p class="copyright">Création grapique : Nicolas Dussouil - Développement web : Guillaume Chanson</p>
-      </div>
-      <!-- ./Copyright -->
+      <div class="overlay"></div>
     </div>
-    <!-- ./fullpage -->
+    <!-- ./Accueil -->
+
+
+    <!-- Date -->
+    <div id="date" class="section fp-auto-height">
+      <div class="page-content flex-ctn accent-gradient">
+        <div class="logo-container">
+          <div class="logo-emn"></div>
+        </div>
+        <div class="date-container flex-0">
+          <div class="date">
+            <div class="date-item day-container"><div class="day">25</div></div>
+            <div class="date-item month-container"><div class="month">novembre</div></div>
+            <div class="date-item year-container"><div class="year">2016</div></div>
+            <div class="date-item hour-container"><div class="hour">22h - 06h</div></div>
+          </div>
+        </div>
+        <div class="logo-container">
+          <div class="logo-emn"></div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Date -->
+
+
+    <!-- Artistes -->
+    <div id="artistes" class="section fp-auto-height">
+      <div class="overlay"></div>
+      <div class="page-content flex-ctn vertical">
+        <div class="flex">
+          <div class="logo-willsman"></div>
+        </div>
+        <div class="flex">
+          <span class="artiste naxxos">NAXXOS</span>
+          <span class="artiste-separator accent-gradient"></span>
+          <span class="artiste nyx">NYX</span>
+        </div>
+      </div>
+    </div>
+    <!-- ./Artistes -->
+
+
+    <!-- Animations -->
+    <div id="animations" class="section fp-auto-height">
+      <div class="page-content">
+        <div class="card-container artifice">
+          <div class="card">
+            <span class="card-title">Feu d'artifice</span>
+            <p class="card-description">Comme chaque année, le Gala commencera avec son feu d'artifice unique ! Il débutera à 22h et sera visible depuis le parvis de l'école.</p>
+          </div>
+        </div>
+        <div class="card-container bars-theme">
+          <div class="card">
+            <span class="card-title">5 bars à thème</span>
+            <p class="card-description">Les premières années vous attendent dans leurs bars dont ils auront imaginé et créé tout l'univers et la décoration.</p>
+          </div>
+        </div>
+        <div class="card-container bar-champagne">
+          <div class="card">
+            <span class="card-title">Bar à champagne</span>
+            <p class="card-description">C'est désormais une tradition, le Gala a son bar à Champagne. Les plus fines bulles seront au rendez-vous pour votre plus grand plaisir.</p>
+          </div>
+        </div>
+        <div class="card-container pompom">
+          <div class="card">
+            <span class="card-title">Show pompom</span>
+            <p class="card-description">Polytech, l'ESB et les Mines s'affronteront dans une battle où la victoire sera attribuée à l'applaudimètre. Venez nombreux pour élire vos préférées !</p>
+          </div>
+        </div>
+        <div class="card-container massages">
+          <div class="card">
+            <span class="card-title">Massages relaxants</span>
+            <p class="card-description">Besoin d'un moment de détente ? Les étudiants de l'Ecole de Kiné de Nantes seront là pour proposer des massages, tout au long de la soirée.</p>
+          </div>
+        </div>
+        <div class="card-container cabaret">
+          <div class="card">
+            <span class="card-title">Cabaret véto</span>
+            <p class="card-description">Après leur succès au Chantrival, le Cabaret Véto revient sur les planches du Gala. Ne manquez pas ce show sensuel &amp; rythmé !</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./Animations -->
+
+
+    <!-- Billeterie -->
+    <div id="billetterie" class="section">
+      <div class="page-content">
+        <!--<div class="red-square"></div>-->
+        <h2 class="title">Billetterie</h2>
+        <div class="description flex-ctn">
+          <p class="flex-3">
+            PREVENTE : 23 €
+            <br>
+            <br>> R.U. Nantais
+            <br>> BDE Nantais
+            <br>> en ligne*
+            <br>
+            <br><sub>*Billets non échangeables, <br> non remboursables.</sub>
+          </p>
+          <p class="flex-3">
+            SUR PLACE : 27 €
+            <br>
+            <br>> le soir même
+            <br>> achat : 19h-03h
+            <br>
+            <br>
+            <br><a href="#faq">Navettes disponibles</a>
+          </p>
+          <p class="flex-3">
+            ALUMNI : 16 €  <sub>au lieu de 23 €</sub>
+            <br>
+            <br>> réservée aux membres de l'association des anciens Mines Nantes Alumni**
+            <br>
+            <br><sub>**dans la limite d'un billet <br> par membre cotisant.</sub>
+          </p>
+        </div>
+        <div class="acheter-container">
+          <a href="https://studeal.fr/evenements/gala-des-mines-2016-1_354" class="acheter">Acheter en ligne</a>
+        </div>
+      </div>
+    </div>
+    <!-- ./Billeterie -->
+
+
+    <!-- FAQS -->
+    <div id="faq" class="section accent-gradient fp-auto-height">
+      <div class="page-content">
+        <div class="side left">
+          <div class="item">
+            <h4 class="title">Comment s'y rendre</h4>
+            <p class="description">
+              BUS
+              <br>> C6 : arrêt Chantrerie-Grandes Ecoles
+              <br>> 75 : arrêt Chantrerie-Grandes Ecoles
+              <br>
+              <br>VOITURE
+              <br>> Périphérique Nord direction "La Chantrerie"
+              <br>> Autoroute A11 - Sortie 24 depuis Paris et Sortie 25 depuis Saint-Nazaire
+              <br>
+              <br>CO-VOITURAGE
+              <br>> blablacar.fr
+              <br>> covoiturage.chantrerie
+            </p>
+          </div>
+          <div class="item">
+            <h4 class="title">Sécurité</h4>
+            <p class="description">
+              L'organisation se réserve le droit d'entrée.
+              <br>Entrée interdite aux moins de 18 ans.
+              <br>
+              <br>Vous devez être en possession d'une pièce d'identité officielle.
+              <br>
+              <br>Tout comportement jugé violent ou inapproprié entrainera l'exclusion définitive de la soirée.
+            </p>
+           </div>
+        </div>
+        <div class="side right">
+          <div class="item">
+            <h4 class="title">Comment rentrer</h4>
+            <p class="description">
+              SYSTEME DE NAVETTES
+              <br>> 3h / 4h / 5h
+              <br>> <b>Prix : 2€</b>
+              <br>Arrêts Centrale-Audencia et Foch-Cathédrale.
+              <br>Départ : Ecole des Mines.
+              <br>
+              <br>CO-VOITURAGE
+              <br>> blablacar.fr
+              <br>> covoiturage.chantrerie
+              <br>
+              <br>VOITURIER
+              <br>> Taxis
+              <br>> UBER
+            </p>
+          </div>
+          <div class="item">
+            <h4 class="title">Nous contacter</h4>
+            <p class="description">
+              GALA MINES NANTES 2016
+              <br>> 4 rue Alfred Kastler, 44300 Nantes, France.
+              <br>> contact@galadesmines.com
+              <br>
+              <br>RESEAUX SOCIAUX
+              <br>> <a href="//www.facebook.com/GalaDesMines2016">Facebook</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./FAQS -->
+
+
+    <!-- Copyright -->
+    <div id="footer" class="section fp-auto-height">
+      <p class="copyright">Création grapique : Nicolas Dussouil - Développement web : Guillaume Chanson</p>
+    </div>
+    <!-- ./Copyright -->
+
+
   </div>
+
+  <div id="page-background"></div>
 
 
 
   <!-- Scripts -->
-  <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
   <script type="text/javascript" src="js/vendors/jquery-3.1.0.min.js"></script>
-  <script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script>
-  <script type="text/javascript" src="js/vendors/jquery.fullpage.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
-        $('#fullpage').fullpage({
-          // Navigation
-          menu: '#fpMenu',
-          navigation: true,
-          navigationPosition: 'right',
-
-          // Scrolling
-          scrollOverflow: true,
-          scrollOverflowOptions: null,
-
-          // Design
-          controlArrows: true,
-          verticalCentered: true,
-          fixedElements: 'header'
-        });
-
-        $($('.fullpage-container')[0]).css('background-image', 'url(\'img/background.jpg\')');
+        $('#page-background').css('background-image', 'url(\'img/background.jpg\')');
     });
   </script>
 </body>
