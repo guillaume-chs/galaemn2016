@@ -255,6 +255,14 @@
     $(document).ready(function() {
         $('#page-background').css('background-image', 'url(\'img/background.jpg\')');
     });
+
+    $(window).scroll(function(e){
+      parallax();
+    });
+    function parallax(){
+      var scrolled = $(window).scrollTop();
+      $('#page-background').css('top',-(scrolled*0.15)+'px');
+    }
   </script>
 </body>
 </html>

@@ -90,7 +90,7 @@ body {
 #page-background {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 150vh;  /* For parallax purpose */
   top: 0;
   left: 0;
   background-repeat: no-repeat;
