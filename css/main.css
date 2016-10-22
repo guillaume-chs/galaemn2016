@@ -146,11 +146,12 @@ body {
  ***************************************************************/
 #date {
   background: rgba(0,0,0,.95);
+  height: 340px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 #date .page-content {
-  height: 250px;
+  height: 300px;
 }
 #date .date-container {
   z-index: 10;
@@ -161,7 +162,7 @@ body {
   flex-direction: column;
   flex: 1;
   padding: 40px 20px;
-  min-width: 12rem;
+  min-width: 15rem;
   max-width: 50%;
   margin: auto;
   border: 8px solid #fff;
@@ -214,20 +215,20 @@ body {
   text-transform: uppercase;
 }
 #date .date-item .day {
-  font-size: 600%;
+  font-size: 900%;
 }
 #date .date-item .month {
-  font-size: 150%;
+  font-size: 175%;
   letter-spacing: 5px;
 }
 #date .date-item .year {
-  font-size: 250%;
+  font-size: 300%;
   padding-left: 16px;
   letter-spacing: 20px;
   vertical-align: baseline;
 }
 #date .date-item .hour {
-  font-size: 210%;
+  font-size: 240%;
   letter-spacing: 0;
 }
 
