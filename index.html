@@ -16,6 +16,11 @@
       background-color: #000;
       -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
+
+    .section {
+      position: relative;
+      top: 0;
+    }
   </style>
 </head>
 <body>
@@ -256,12 +261,33 @@
         $('#page-background').css('background-image', 'url(\'img/background.jpg\')');
     });
 
+
+    const homeHeight = $('#home').innerHeight();
+    const homeOverlayHeight = $($('#home .overlay')[0]).innerHeight();
+    const datePadding = 20;
+
+
     $(window).scroll(function(e){
       parallax();
     });
     function parallax(){
-      var scrolled = $(window).scrollTop();
-      $('#page-background').css('top',-(scrolled*0.15)+'px');
+      const scrolled = $(window).scrollTop();
+      const scrolledPercentage = (1 - scrolled*3/$(document).height());
+
+      $('#page-background').css('top', (-scrolled*0.15) + 'px');
+      //$('header').css('top', (scrolled*0.9) + 'px');
+      //$('#home').css('top', (-scrolled*0.05) + 'px');
+
+      $('#home .overlay').css('height', homeOverlayHeight * scrolledPercentage  + 'px');
+      $('#home').css('height', homeHeight * scrolledPercentage + 'px');
+
+      if (scrolled < $('#date').offset().top) {
+        const padding = datePadding + (datePadding * (1-scrolledPercentage) * 4);
+        $('#date').css('padding-top', (padding * 0.9) + 'px');
+        $('#date').css('padding-bottom', (padding * 1.2) + 'px');
+      } else {
+        $('#date').css('padding', datePadding + 'px auto');
+      }
     }
   </script>
 </body>

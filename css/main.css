@@ -18,15 +18,17 @@
  *
  ***************************************************************/
 header {
-  position: fixed;
+  position: absolute;
   height: auto;
   width: 100%;
   top: 0;
+  z-index: 1000;
+  padding: 5px 0;
   background-color: rgba(0, 0, 0, .9);
 }
 header > .menu * {
   font-family: "FuturaLight", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   font-style: normal;
   font-weight: normal;
@@ -89,11 +91,11 @@ body {
 }
 #page-background {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 150vh;  /* For parallax purpose */
   top: 0;
   left: 0;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   background-position: top left;
   z-index: -100;
@@ -108,10 +110,13 @@ body {
  * HOME
  *
  ***************************************************************/
+#home,
+#home .overlay {
+  padding-bottom: 15vh;
+}
 #home .logo-gala {
   width: inherit;
-  height: 85vh;
-  margin-bottom: 5vh;
+  height: 90vh;
   background-image: url('../img/gala_logo.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -119,15 +124,15 @@ body {
 }
 #home .overlay {
   position: absolute;
-  z-index: -10;
-  top: 38px;
+  z-index: 10;
+  top: 0;
   left: 0;
   width: 100%;
   height: 90vh;
   background: rgba(0,0,0,.15); /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(27,0,135,0) 0%, rgba(0,0,0,.1) 85%, rgba(0,0,0,.9) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(27,0,135,0) 0%, rgba(0,0,0,.1) 85%, rgba(0,0,0,.9) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(27,0,135,0) 0%, rgba(0,0,0,.1) 85%, rgba(0,0,0,.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top, rgba(27,0,135,0) 0%, rgba(0,0,0,.1) 85%, rgba(0,0,0,.95) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(27,0,135,0) 0%, rgba(0,0,0,.1) 85%, rgba(0,0,0,.95) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(27,0,135,0) 0%, rgba(0,0,0,.1) 85%, rgba(0,0,0,.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 
@@ -140,14 +145,15 @@ body {
  *
  ***************************************************************/
 #date {
-  background: rgba(0,0,0,.9);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  background: rgba(0,0,0,.95);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 #date .page-content {
-  height: 300px;
+  height: 250px;
 }
 #date .date-container {
+  z-index: 10;
   display: flex;
 }
 #date .date {
@@ -155,7 +161,7 @@ body {
   flex-direction: column;
   flex: 1;
   padding: 40px 20px;
-  min-width: 15rem;
+  min-width: 12rem;
   max-width: 50%;
   margin: auto;
   border: 8px solid #fff;
@@ -208,20 +214,20 @@ body {
   text-transform: uppercase;
 }
 #date .date-item .day {
-  font-size: 900%;
+  font-size: 600%;
 }
 #date .date-item .month {
-  font-size: 175%;
+  font-size: 150%;
   letter-spacing: 5px;
 }
 #date .date-item .year {
-  font-size: 300%;
+  font-size: 250%;
   padding-left: 16px;
   letter-spacing: 20px;
   vertical-align: baseline;
 }
 #date .date-item .hour {
-  font-size: 240%;
+  font-size: 210%;
   letter-spacing: 0;
 }
 
@@ -234,6 +240,10 @@ body {
  * ARTISTES Gala
  *
  ***************************************************************/
+#artistes,
+#artistes .overlay {
+  height: 100vh;
+}
 #artistes .overlay {
   position: absolute;
   z-index: -10;
@@ -255,10 +265,6 @@ body {
 
 
 @media (max-width: 899px) {
-  #artistes,
-  #artistes .overlay {
-    height: 100vh ;
-  }
   #artistes .artiste {
     display: inline-block;
     margin: 1rem auto;
@@ -271,10 +277,6 @@ body {
 
 
 @media (min-width: 900px) {
-  #artistes,
-  #artistes .overlay {
-    height: 75vh ;
-  }
   #artistes .flex + .flex {
     margin-top: 2rem;
     margin-bottom: 3%;
