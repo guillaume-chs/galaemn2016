@@ -165,6 +165,9 @@
         <div class="acheter-container">
           <a href="https://studeal.fr/evenements/gala-des-mines-2016-1_354" class="acheter">Acheter en ligne</a>
         </div>
+        <div class="wonderbox-container">
+          <a href="./Jeu_Wonderbox_reglement.pdf" class="wonderbox">Jouer au jeu Wonderbox</a>
+        </div>
       </div>
     </div>
     <!-- ./Billeterie -->
@@ -254,29 +257,32 @@
   <!-- Scripts -->
   <script type="text/javascript" src="js/vendors/jquery-3.1.0.min.js"></script>
   <script type="text/javascript">
+    var homeHeight;
+    var datePadding;
+    var scrolled;
+    var scrolledPercentage;
+
+
     $(document).ready(function() {
         $('#page-background').css('background-image', 'url(\'img/background.jpg\')');
+
+        homeHeight = $('#home').innerHeight();
+        datePadding = 20;
+        scrolled = $(window).scrollTop();
+        scrolledPercentage = (1 - scrolled*3/$(document).height());
     });
-
-
-    const homeHeight = $('#home').innerHeight();
-    const homeOverlayHeight = $($('#home .overlay')[0]).innerHeight();
-    const datePadding = 20;
 
 
     $(window).scroll(function(e){
       parallax();
     });
+
     function parallax(){
-      const scrolled = $(window).scrollTop();
-      const scrolledPercentage = (1 - scrolled*3/$(document).height());
+      scrolled = $(window).scrollTop();
+      scrolledPercentage = (1 - scrolled*3/$(document).height());
 
       $('#page-background').css('top', (-scrolled*0.15) + 'px');
-      //$('header').css('top', (scrolled*0.9) + 'px');
-      //$('#home').css('top', (-scrolled*0.05) + 'px');
-
-      $('#home .overlay').css('height', homeOverlayHeight * scrolledPercentage  + 'px');
-      $('#home').css('height', homeHeight * scrolledPercentage + 'px');
+      $('#home, #home .overlay').css('height', (homeHeight * scrolledPercentage) + 'px');
 
       if (scrolled < $('#date').offset().top) {
         const padding = datePadding + (datePadding * (1-scrolledPercentage) * 4);
@@ -286,6 +292,14 @@
         $('#date').css('padding', datePadding + 'px auto');
       }
     }
+
+    $('#fpMenu a').on('click', function() {
+      const target = $(this).attr('href');
+      const offset = $(target).offset().top;
+      $('html, body').animate({
+        scrollTop: offset - homeHeight*(offset*1.9/$(document).height())
+      }, "fast");
+    });
   </script>
 </body>
 </html>
