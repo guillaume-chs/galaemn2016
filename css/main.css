@@ -572,6 +572,9 @@ body {
   font-family: 'FuturaRegular', sans-serif;
   font-weight: normal;
 }
+#footer .copyright > a {
+  color: white;
+}
 
 
 
