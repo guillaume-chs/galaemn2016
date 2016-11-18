@@ -426,11 +426,18 @@ body {
 }
 
 
-#billetterie .title {
+#billetterie .title-container {
   margin: 0;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+#billetterie .title {
+  margin: 0;
+}
+#billetterie .subtitle {
+  width: 100%;
+  font-size: 1.2em;
 }
 #billetterie .description {
   margin: 10vh auto;
@@ -477,18 +484,14 @@ body {
 
 
 @media (max-width: 899px) {
-  #billetterie .title {
-    font-size: 350%;
-    letter-spacing: 2px;
-  }
+  #billetterie .title-container { letter-spacing: 2px; }
+  #billetterie .title { font-size: 350%; }
   #billetterie .red-square { display: none; }
   #billetterie .description { width: 80%; }
 }
 @media (min-width: 900px) {
-  #billetterie .title {
-    font-size: 5em;
-    letter-spacing: 4px;
-  }
+  #billetterie .title-container { letter-spacing: 4px; }
+  #billetterie .title { font-size: 5em; }
   #billetterie .red-square {
     z-index: -1;
     width: 22%;
@@ -549,6 +552,10 @@ body {
   font-size: 0.9em;
 }
 #faq a {
+  color: white;
+  text-decoration: underline;
+}
+#faq a.facebook {
   color: rgb(27,0,135);
   text-decoration: none;
 }
