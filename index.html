@@ -18,6 +18,25 @@
       position: relative;
       top: 0;
     }
+
+    #date .date-item .exposant {
+      font-size: 70%;
+      letter-spacing: 0;
+      bottom: 0.40em;
+    }
+    #date .date-item .exposant > a {
+      text-decoration: none;
+      color: white;
+    }
+
+    a:focus,
+    a:hover,
+    a:active,
+    #tonus-note:focus,
+    #tonus-note:hover,
+    #tonus-note:active {
+      background-color: rgba(0,0,0,.3);
+    }
   </style>
 </head>
 <body>
@@ -58,7 +77,7 @@
             <div class="date-item day-container"><div class="day">25</div></div>
             <div class="date-item month-container"><div class="month">novembre</div></div>
             <div class="date-item year-container"><div class="year">2016</div></div>
-            <div class="date-item hour-container"><div class="hour">22h - 06h</div></div>
+            <div class="date-item hour-container"><div class="hour">22h - 06h<sub class="exposant"><a href="#tonus-note">*</a></sub></div></div>
           </div>
         </div>
         <div class="logo-container">
@@ -237,6 +256,8 @@
               <br>
               <br><u>RESEAUX SOCIAUX</u>
               <br>> <a href="https://www.facebook.com/events/982653805179177/" class="facebook">Facebook</a>
+              <br>
+              <br><span id="tonus-note">(*) 03h-06h : dans la limite des places disponibles</span>
             </p>
           </div>
         </div>
